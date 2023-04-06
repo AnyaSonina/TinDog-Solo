@@ -20,7 +20,7 @@ function render() {
   }else {
    document.querySelector(".dog_card__main").innerHTML =  finish.getFinishHTML(likedDogs)
    document.querySelector(".dog_card__main").style.textAlign = "center"
-   document.querySelector(".dog_card__main").style.marginTop = "40%"
+   document.querySelector(".dog_card__main").style.marginTop = "30%"
    document.querySelector(".dog_card__footer").innerHTML = ""  
    document.querySelector(".grid").addEventListener("click", function(e) {
     document.querySelector(".dog_card__main").innerHTML =  finish.ifDogClicked(e.target.closest("div.liked-dog"))
