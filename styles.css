@@ -1,0 +1,200 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 2% 0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(239, 114, 114, 0.832);
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 3px;
+}
+
+#dog_card {
+  position: relative;
+  min-width: 235px;
+  height: 90vh;
+  width: 35vw;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.dog_card__header {
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dog_card__main {
+  height: 75%;  
+
+}
+
+.dog_card__main .dog_img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dog_card__footer {
+  height: 13%;
+}
+
+.header_icon img {
+  width: 2.6em;
+}
+
+.paw img {
+  width: 6em;
+  height: 3em;
+}
+
+.dog_card__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 1em;
+}
+
+.reactions {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 4.5em;
+  height: 4.5em;
+  box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+.reactions img {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 auto;
+}
+
+.accept_btn img {
+  width: 1.8em;
+}
+
+.accept_btn:hover {
+  background: #DBFFF4;
+}
+
+.reject_btn:hover {
+  background: #FFE7EF;
+}
+
+.dog_card__main .bage {
+  position: absolute;
+  top:15%;
+  left: 18px;
+  width: 100px;
+  height: 50px;
+  transform: rotate(-30deg);
+}
+
+.dogs_info {
+  color:#fff;
+  position: absolute;
+  bottom:19%;
+  left: 20px;
+}
+
+.bio {
+  color: #B7B7B7;
+}
+
+.liked-dog {
+  text-align: center;
+  cursor: pointer;
+}
+
+.liked-dog img{
+ width: 100%;
+ border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 100px);
+  gap:10px;
+  justify-content: center;  
+}
+
+.dog_card--finish {
+  min-width: 235px;
+  height: 90vh;
+  width: 35vw;
+  padding: 10px;
+  padding-top: 17px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+.dog_card__main--finish{
+  text-align: center; 
+}
+
+.message {
+  display: grid;
+  height: 100%;
+  width: 90%;
+  grid-template-columns: minmax(100px, 1fr)  minmax(100px, 1fr) ;
+  gap: 10px;
+  grid-template-areas: "image-group input-group";
+  overflow: hidden;
+  align-items: center;
+}
+
+.message-avatar {
+ grid-area:image-group;
+ justify-self: end;
+}
+
+input {
+  grid-area: input-group;
+  justify-self: start;
+  width: 90%;
+  margin-top: -3em;
+  outline: 2px solid rgb(37, 204, 204);
+}
+
+.message-avatar h3 {
+  width:100px;
+}
+
+.message-avatar img {
+  width:100px;
+  height: 100px; 
+  border-radius: 50%;
+  object-fit: cover;
+ 
+}
