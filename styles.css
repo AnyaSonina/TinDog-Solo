@@ -168,7 +168,7 @@ p {
   height: 100%;
   width: 90%;
   grid-template-columns: minmax(100px, 1fr)  minmax(100px, 1fr) ;
-  gap: 10px;
+  gap: 20px;
   grid-template-areas: "image-group input-group";
   overflow: hidden;
   align-items: center;
