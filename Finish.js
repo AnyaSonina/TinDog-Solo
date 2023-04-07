@@ -1,10 +1,5 @@
 class Finish {
   
-  constructor(data) {
-    Object.assign(this, data)
-  }
-  
-  
   getFinishHTML(likedDogs) {
     let getEndhHTML = likedDogs.map(dog => {
       return `
